@@ -83,8 +83,8 @@ function Items() {
           </TableHead>
           <TableBody>
             {items.map((item) => (
-              <TableRow className="bg-white dark:border-gray-700 dark:bg-gray-800">
-                <TableCell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
+              <TableRow className="bg-white ">
+                <TableCell className="whitespace-nowrap font-medium text-gray-900">
                   {item.itemName}
                 </TableCell>
                 <TableCell>{item.price}</TableCell>
@@ -106,7 +106,7 @@ function Items() {
         <ModalHeader />
         <ModalBody>
           <div className="space-y-6">
-            <h3 className="text-xl font-medium text-gray-900 dark:text-white">
+            <h3 className="text-xl font-medium text-gray-900 ">
               Add New Items
             </h3>
             <div>

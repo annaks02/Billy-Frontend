@@ -241,7 +241,7 @@ function Invoice() {
             {invoices.map((invoice) => (
               <TableRow
                 key={invoice._id}
-                className="bg-white dark:border-gray-700 dark:bg-gray-800"
+                className="bg-white "
               >
                 <TableCell className="whitespace-nowrap  ">
                   {invoice.invoiceId}{" "}
@@ -297,8 +297,8 @@ function Invoice() {
                   </TableHead>
                   <TableBody className="divide-y">
                     {selectedInvoice.lineItems.map((li, index) => (
-                      <TableRow className="bg-white dark:border-gray-700 dark:bg-gray-800">
-                        <TableCell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
+                      <TableRow className="bg-white ">
+                        <TableCell className="whitespace-nowrap font-medium text-gray-900">
                           {li.item.itemName}
                         </TableCell>
                         <TableCell>{li.quantity} </TableCell>
@@ -396,10 +396,10 @@ function Invoice() {
                 <TableBody className="divide-y">
                   {lineItems.map((li, index) => (
                     <TableRow
-                      className="bg-white dark:border-gray-700 dark:bg-gray-800"
+                      className="bg-white "
                       key={index}
                     >
-                      <TableCell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
+                      <TableCell className="whitespace-nowrap font-medium text-gray-900 ">
                         <Select
                           value={li.itemId}
                           onChange={(e) =>

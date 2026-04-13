@@ -84,8 +84,8 @@ function Customers() {
           </TableHead>
           <TableBody>
             {customers.map((customer) => (
-              <TableRow className="bg-white dark:border-gray-700 dark:bg-gray-800">
-                <TableCell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
+              <TableRow className="bg-white ">
+                <TableCell className="whitespace-nowrap font-medium text-gray-900 ">
                   {customer.customerName}
                 </TableCell>
                 <TableCell>{customer.discount}</TableCell>
@@ -106,7 +106,7 @@ function Customers() {
         <ModalHeader />
         <ModalBody>
           <div className="space-y-6">
-            <h3 className="text-xl font-medium text-gray-900 dark:text-white">
+            <h3 className="text-xl font-medium text-gray-900 ">
               Add New Customer
             </h3>
             <div>
